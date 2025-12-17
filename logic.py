@@ -34,10 +34,19 @@ def ask_gemini(prompt, language, mode):
         return f"Hata oluştu: {str(e)}"
 
 
+
 def get_file_extension(language):
     ext_map = {
-        "Python": "py", "C#": "cs", "Flutter (Dart)": "dart",
-        "JavaScript": "js", "SQL": "sql", "Java": "java",
-        "C++": "cpp", "HTML/CSS": "html"
+        "Python": "py", 
+        "C#": "cs", 
+        "Flutter (Dart)": "dart",
+        "JavaScript": "js", 
+        "SQL": "sql", 
+        "Java": "java",
+        "C++": "cpp", 
+        "HTML/CSS/JS (Web)": "html",
+        "Kotlin": "kt",    
+        "Swift": "swift"    
     }
+  
     return ext_map.get(language, "txt")

@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+.stApp {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    background: radial-gradient(at 0% 0%, rgba(255, 75, 75, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(255, 145, 77, 0.05) 0px, transparent 50%),
+                #0b0e14 !important;
+    color: #e2e8f0 !important;
+}
+
+
+[data-testid="stSidebar"] {
+    background-color: rgba(17, 20, 28, 0.8) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stImage"] img {
+    border-radius: 20px !important;
+    filter: drop-shadow(0 0 10px rgba(255, 75, 75, 0.2)) !important;
+    transition: all 0.4s ease !important;
+    border: 1px solid rgba(255, 75, 75, 0.1) !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stImage"] img:hover {
+    transform: translateY(-5px) scale(1.03) !important;
+    filter: drop-shadow(0 0 20px rgba(255, 75, 75, 0.4)) !important;
+}
+
+div.stButton > button {
+    background: linear-gradient(135deg, #ff4b4b 0%, #ff8547 100%) !important;
+    border: none !important;
+    color: white !important;
+    padding: 0.7rem 1.4rem !important;
+    border-radius: 14px !important;
+    font-weight: 700 !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    box-shadow: 0 8px 15px -8px rgba(255, 75, 75, 0.5) !important;
+    width: 100% !important;
+}
+
+div.stButton > button:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 25px -8px rgba(255, 75, 75, 0.7) !important;
+    filter: brightness(1.1) !important;
+}
+
+[data-testid="stChatMessage"] {
+    background-color: rgba(30, 35, 45, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.03) !important;
+    border-radius: 20px !important;
+    margin-bottom: 1rem !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+code {
+    color: #4cd1ff !important;
+    background: rgba(76, 209, 255, 0.08) !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    padding: 3px 6px !important;
+    border-radius: 6px !important;
+}
+
+pre {
+    background-color: #12151c !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 18px !important;
+}
+
+h1 {
+    font-weight: 800 !important;
+    background: linear-gradient(90deg, #ff4b4b, #ffb38a) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
